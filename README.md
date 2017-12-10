@@ -8,25 +8,25 @@
 
 En este ejercio se descargan las imagenes y las frases desde el servidor alumnos.mobi. En un fichero se encontrarán las imagenes , mientras que en el otro fichero estarán las frases. Esto se mostrarán de forma automática.
 
-<br/>
+<p>
 >**<i>Estructura de Métodos Usados</i>**
 
-<br/>
+<p>
 >Clase Principal
 
 >![enter image description here](https://lh3.googleusercontent.com/-tNIJ3Ll1qA8/Wi0wQ8uS7PI/AAAAAAAAJbY/cl0_WQVDiccJOKA66FBJNWZkqYHPeDRzwCLcBGAs/s2000/m%25C3%25A9todos.png "métodos.png")
 
-<br/>
+<p>
 >Hilo de descarga de enlaces y frases
 
 >![enter image description here](https://lh3.googleusercontent.com/-r_DW9vtVEdU/Wi0xCkg6oRI/AAAAAAAAJbk/DQ5Qfy5QHIIXdfVeftNrUBdUbIoI4sLWACLcBGAs/s2000/metodosHilo.png "metodosHilo.png")
 
-<br/>
+<p>
 >Hilo de descarga de imágenes
 
 >![enter image description here](https://lh3.googleusercontent.com/32FIm0bHOyhfb6_VBC-u1_G_KKsidGpL-QWSynD26xqOmwkTtOBR2RJGSGZgaYhVWXcZQG7sYnT8=s2000 "HiloDescargaImagenes.png")
 
-<br/>
+<p>
 >**Observaciones**
 
 No he utilizado métodos asíncronos puesto que si usaba estos tenia un problema y es que el hilo principal seguía ejecutandose con lo cual lo que he hecho a sido crear dos hilos uno que descarga los enlaces y las frases y el otro que se encarga de descargar las imagenes, y para que el hilo principal no continue este llama al método esperar de los hilos("Este método llama al método join para que el hilo principal espere a que este hilo termine").
@@ -58,7 +58,6 @@ Para el problema de los views en encontrado las siguientes soluciones:
 - Se ha añadido la posibilidad de que si volvemos a pulsar el botón esta pare el proceso de pasar las imagenes y reinicialice los ArrayList y las banderas por si queremos volver a descargar. Esto se hace en el método **cerrarManejador**.
 
 - Imagenes almacenadas en el dispositivo, si perdemos la conexión a internet estas deberían seguir pasandose sin problema a pesar de perder la conexión.
-<br/>
 
 >**Imagen de muestra de la APP**
 
